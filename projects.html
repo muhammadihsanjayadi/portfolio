@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects | Muhammad Jayadi</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    .portfolio-index-heading {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 80px 28px 35px;
+      text-align: center;
+    }
+
+    .portfolio-index-heading h1 {
+      font-size: clamp(4rem, 8vw, 7rem);
+      line-height: 0.95;
+      letter-spacing: -0.045em;
+      font-weight: 800;
+    }
+
+    .portfolio-index-grid {
+      padding-top: 35px;
+    }
+
+    .project-metadata {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .metadata-tag {
+      display: inline-block;
+      border: 1px solid #171717;
+      padding: 6px 9px;
+      font-size: 0.72rem;
+      line-height: 1;
+    }
+
+    .metadata-tag strong {
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 800px) {
+
+      .portfolio-index-heading {
+        padding-top: 60px;
+        padding-bottom: 25px;
+      }
+
+      .portfolio-index-grid {
+        padding-top: 25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+
+  <header class="site-header">
+
+    <nav class="navbar">
+
+      <a class="site-name" href="index.html">
+        Muhammad Jayadi
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- Page Heading -->
+
+    <section class="portfolio-index-heading">
+      <h1>PROJECTS</h1>
+    </section>
+
+
+    <!-- Projects Grid -->
+
+    <section class="projects-section portfolio-index-grid">
+
+      <div class="projects-grid">
+
+
+        <!-- BC Historical Wildfire Explorer -->
+
+        <article class="project-card">
+
+          <a
+            class="project-image"
+            href="bc-historical-wildfire-explorer.html"
+          >
+
+            <img
+              src="images/bc_historical_wildfire_explorer.png"
+              alt="BC Historical Wildfire Explorer web GIS showing historical wildfire records and fire-management boundaries"
+            >
+
+          </a>
+
+
+          <div class="project-content">
+
+            <div class="project-metadata">
+
+              <span class="metadata-tag">
+                <strong>PLATFORM:</strong> PostgreSQL/PostGIS · React/Leaflet
+              </span>
+
+              <span class="metadata-tag">
+                <strong>LANGUAGE:</strong> SQL · JavaScript
+              </span>
+
+            </div>
+
+
+            <h3>
+              BC Historical Wildfire Explorer
+            </h3>
+
+            <p>
+              Full-stack web GIS for exploring 23,306 historical wildfire
+              records across British Columbia using PostgreSQL/PostGIS,
+              Node.js/Express, React, and Leaflet.
+            </p>
+
+            <a
+              class="project-link"
+              href="bc-historical-wildfire-explorer.html"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Coastal Turbidity Analysis -->
+
+        <article class="project-card">
+
+          <a
+            class="project-image project-image-map"
+            href="coastal-turbidity-analysis.html"
+          >
+
+            <img
+              src="images/morowali_turbidity_map.png"
+              alt="Coastal turbidity change map near the Indonesia Morowali Industrial Park"
+            >
+
+          </a>
+
+
+          <div class="project-content">
+
+            <div class="project-metadata">
+
+              <span class="metadata-tag">
+                <strong>PLATFORM:</strong> ArcGIS Pro
+              </span>
+
+              <span class="metadata-tag">
+                <strong>LANGUAGE:</strong> Python (ArcPy)
+              </span>
+
+            </div>
+
+
+            <h3>
+              Coastal Turbidity Analysis
+            </h3>
+
+            <p>
+              Sentinel-2 coastal turbidity change analysis using an automated
+              ArcPy workflow for water delineation, NDTI calculation, and
+              multi-date change analysis.
+            </p>
+
+            <a
+              class="project-link"
+              href="coastal-turbidity-analysis.html"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Global Snow Persistence Explorer -->
+
+        <article class="project-card">
+
+          <a
+            class="project-image"
+            href="global-snow-persistence-explorer.html"
+          >
+
+            <img
+              src="images/snow_persistence_explorer.png"
+              alt="Global Snow Persistence Explorer Google Earth Engine web app"
+            >
+
+          </a>
+
+
+          <div class="project-content">
+
+            <div class="project-metadata">
+
+              <span class="metadata-tag">
+                <strong>PLATFORM:</strong> Google Earth Engine
+              </span>
+
+              <span class="metadata-tag">
+                <strong>LANGUAGE:</strong> JavaScript
+              </span>
+
+            </div>
+
+
+            <h3>
+              Global Snow Persistence Explorer
+            </h3>
+
+            <p>
+              Interactive Google Earth Engine web app for exploring annual
+              snow persistence worldwide using ERA5-Land data.
+            </p>
+
+            <a
+              class="project-link"
+              href="global-snow-persistence-explorer.html"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+    <p>© 2026 Muhammad Jayadi</p>
+  </footer>
+
+</body>
+
+</html>

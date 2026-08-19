@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhammad Jayadi | E-Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    .hero {
+      padding-bottom: 45px;
+    }
+
+    .projects-section {
+      padding-top: 50px;
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 36px;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(2.3rem, 3vw, 3.25rem);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 800px) {
+
+      .hero {
+        padding-bottom: 40px;
+      }
+
+      .projects-section {
+        padding-top: 40px;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .hero-content h1 {
+        font-size: clamp(2.4rem, 10vw, 3.5rem);
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+
+  <header class="site-header">
+
+    <nav class="navbar">
+
+      <a class="site-name" href="index.html">
+        Muhammad Jayadi
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+      <div class="hero-image">
+
+        <img
+          src="images/Profile_picture-modified.png"
+          alt="Muhammad Jayadi"
+        >
+
+      </div>
+
+
+      <div class="hero-content">
+
+        <h1>
+          MUHAMMAD JAYADI'S<br>
+          E-PORTFOLIO
+        </h1>
+
+
+        <p class="hero-intro">
+          I am a Master of Geomatics for Environmental Management (MGEM)
+          student at the University of British Columbia with a background in
+          forest resources management and applied experience in GIS, remote
+          sensing, geospatial programming, and environmental management.
+        </p>
+
+
+        <div class="hero-links">
+
+          <a href="resume.html">
+            Resume
+          </a>
+
+          <a href="projects.html">
+            Projects
+          </a>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+        </div>
+
+
+        <p class="hero-interests">
+          <strong>Interests:</strong>
+          GIS | Remote Sensing | Geospatial Programming |
+          Spatial Analysis | Environmental Management | Forestry
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Project Highlights -->
+
+    <section class="projects-section">
+
+      <div class="section-heading">
+
+        <h2>
+          Project Highlights
+        </h2>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+
+
+        <!-- BC Historical Wildfire Explorer -->
+
+        <article class="project-card">
+
+          <a
+            class="project-image"
+            href="bc-historical-wildfire-explorer.html"
+          >
+
+            <img
+              src="images/bc_historical_wildfire_explorer.png"
+              alt="BC Historical Wildfire Explorer web GIS showing historical wildfire records and fire-management boundaries"
+            >
+
+          </a>
+
+
+          <div class="project-content">
+
+            <p class="project-type">
+              PostgreSQL/PostGIS • React/Leaflet
+            </p>
+
+            <h3>
+              BC Historical Wildfire Explorer
+            </h3>
+
+            <p>
+              Full-stack web GIS for exploring 23,306 historical wildfire
+              records across British Columbia using PostgreSQL/PostGIS,
+              Node.js/Express, React, and Leaflet.
+            </p>
+
+            <a
+              class="project-link"
+              href="bc-historical-wildfire-explorer.html"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Coastal Turbidity Analysis -->
+
+        <article class="project-card">
+
+          <a
+            class="project-image project-image-map"
+            href="coastal-turbidity-analysis.html"
+          >
+
+            <img
+              src="images/morowali_turbidity_map.png"
+              alt="Coastal turbidity change map near the Indonesia Morowali Industrial Park"
+            >
+
+          </a>
+
+
+          <div class="project-content">
+
+            <p class="project-type">
+              ArcGIS Pro • Python (ArcPy)
+            </p>
+
+            <h3>
+              Coastal Turbidity Analysis
+            </h3>
+
+            <p>
+              Sentinel-2 coastal turbidity change analysis using an automated
+              ArcPy workflow for water delineation, NDTI calculation, and
+              multi-date change analysis.
+            </p>
+
+            <a
+              class="project-link"
+              href="coastal-turbidity-analysis.html"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Global Snow Persistence Explorer -->
+
+        <article class="project-card">
+
+          <a
+            class="project-image"
+            href="global-snow-persistence-explorer.html"
+          >
+
+            <img
+              src="images/snow_persistence_explorer.png"
+              alt="Global Snow Persistence Explorer Google Earth Engine web app"
+            >
+
+          </a>
+
+
+          <div class="project-content">
+
+            <p class="project-type">
+              Google Earth Engine • JavaScript
+            </p>
+
+            <h3>
+              Global Snow Persistence Explorer
+            </h3>
+
+            <p>
+              Interactive Google Earth Engine web app for exploring annual
+              snow persistence worldwide using ERA5-Land data.
+            </p>
+
+            <a
+              class="project-link"
+              href="global-snow-persistence-explorer.html"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer class="site-footer">
+    <p>© 2026 Muhammad Jayadi</p>
+  </footer>
+
+
+</body>
+
+</html>
